@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "682070",
+    "ThreadId": "275307",
+    "Html": "\r\n<p>&nbsp;</p>\r\n<p>Hi!!, I was wonderig if this code can create new mime messages (with attachments, html body ...) I don't see documentation or any posts/examples on how to do this.</p>\r\n<p>Thank you</p>\r\n<p>Regards</p>\r\n<p>Leo</p>\r\n",
+    "PostedDate": "2011-10-10T05:44:32.97-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "682072",
+    "ThreadId": "275307",
+    "Html": "no. I haven't looked into this project for quite a while, but as far<br>\r\nas I remember the Microsoft SmtpClient class can do this already, so<br>\r\nincorporating this into my parser didn't seem like well spent time :)<br>\r\n<br>\r\nOn Mon, Oct 10, 2011 at 2:44 PM, [email removed] wrote:<br>\r\n&gt; From: Leonardox22<br>\r\n&gt;<br>\r\n&gt;<br>\r\n&gt;<br>\r\n&gt; Hi!!, I was wonderig if this code can create new mime messages (with<br>\r\n&gt; attachments, html body ...) I don't see documentation or any posts/examples<br>\r\n&gt; on how to do this.<br>\r\n&gt;<br>\r\n&gt; Thank you<br>\r\n&gt;<br>\r\n&gt; Regards<br>\r\n&gt;<br>\r\n&gt; Leo<br>\r\n&gt;<br>\r\n&gt; Read the full discussion online.<br>\r\n&gt;<br>\r\n&gt; To add a post to this discussion, reply to this email<br>\r\n&gt; ([email removed])<br>\r\n&gt;<br>\r\n&gt; To start a new discussion for this project, email<br>\r\n&gt; [email removed]<br>\r\n&gt;<br>\r\n&gt; You are receiving this email because you subscribed to this discussion on<br>\r\n&gt; CodePlex. You can unsubscribe or change your settings on codePlex.com.<br>\r\n&gt;<br>\r\n&gt; Please note: Images and attachments will be removed from emails. Any posts<br>\r\n&gt; to this discussion will also be available online at codeplex.com",
+    "PostedDate": "2011-10-10T05:47:18.973-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "682103",
+    "ThreadId": "275307",
+    "Html": "<p>Thank you</p>",
+    "PostedDate": "2011-10-10T07:09:19.01-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

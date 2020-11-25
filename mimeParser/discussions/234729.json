@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "522119",
+    "ThreadId": "234729",
+    "Html": "\r\n<p>Hi. I have a problem with cyrillic text. &nbsp;Are your library supports it?</p>\r\n",
+    "PostedDate": "2010-11-15T06:35:24.607-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "522127",
+    "ThreadId": "234729",
+    "Html": "I have no idea. you should probably test it out :) it handles<br />norwegian characters though, so it might very well do that.<br /><br />On Mon, Nov 15, 2010 at 3:35 PM, [email removed] wrote:<br />> From: sharok9<br />><br />> Hi. I have a problem with cyrillic text.  Are your library supports it?<br />><br />> Read the full discussion online.<br />><br />> To add a post to this discussion, reply to this email<br />> ([email removed])<br />><br />> To start a new discussion for this project, email<br />> [email removed]<br />><br />> You are receiving this email because you subscribed to this discussion on<br />> CodePlex. You can unsubscribe or change your settings on codePlex.com.<br />><br />> Please note: Images and attachments will be removed from emails. Any posts<br />> to this discussion will also be available online at codeplex.com",
+    "PostedDate": "2010-11-15T06:46:11.2-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "522141",
+    "ThreadId": "234729",
+    "Html": "\r\n<p>hmm</p>\r\n<p>I wrote the following text:</p>\r\n<p>Date: Sun, 31 Oct 2010 21:12:24 &#43;0600<br>\r\nFrom: meew1@google.com<br>\r\nX-Priority: 3 (Normal)<br>\r\nMessage-ID: &lt;1176875350.20101031211224@google.com&gt;<br>\r\nTo: meew2@google.com<br>\r\nSubject: Subject<br>\r\nMIME-Version: 1.0<br>\r\nContent-Type: text/plain; charset=windows-1251<br>\r\nContent-Transfer-Encoding: quoted-printable<br>\r\n<br>\r\nHello People.=CF=F0=E8=E2=E5=F2 People.<br>\r\n<br>\r\n.</p>\r\n<p>&nbsp;=CF=F0=E8=E2=E5=F2 - it's hello on Russian (Привет)</p>\r\n<p>&nbsp;Output of program is like this: message.Body <strong>&quot;Hello People.&Iuml;&eth;&egrave;&acirc;&aring;&ograve; People.&quot;&nbsp;</strong><br>\r\n<br>\r\n</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2010-11-15T07:09:21.833-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

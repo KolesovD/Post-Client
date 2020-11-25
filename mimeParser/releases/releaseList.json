@@ -1,0 +1,36 @@
+[
+  {
+    "Id": "0",
+    "Name": "0.2 Beta",
+    "DevelopmentStatus": "Beta",
+    "Description": "Added robustness and test cases",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2008-12-05T22:14:21.923-08:00",
+    "Files": [
+      {
+        "Id": "2148e01d-bb52-4ea4-8e85-0dadcb6388f5",
+        "FileName": "MailMessageMimeParser_02.zip",
+        "Url": "./0/2148e01d-bb52-4ea4-8e85-0dadcb6388f5",
+        "Type": "Application",
+        "UploadDate": "2008-09-30T15:01:15.727-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "1",
+    "Name": "0.3",
+    "DevelopmentStatus": "Beta",
+    "Description": "Made more robust to handle malformed messages",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2009-11-25T15:05:46.357-08:00",
+    "Files": [
+      {
+        "Id": "5a85f548-e0cc-4ed3-8269-d5829d4746e2",
+        "FileName": "MailMessageMimeParser_03.zip",
+        "Url": "./1/5a85f548-e0cc-4ed3-8269-d5829d4746e2",
+        "Type": "Application",
+        "UploadDate": "2009-11-25T15:03:41.137-08:00"
+      }
+    ]
+  }
+]

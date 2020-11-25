@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "819165",
+    "ThreadId": "350999",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>I tried it for some eml files. It reads all field except body. But it works fine with sample files included in this project.&nbsp;</p>\r\n<p>Can anyone tell me the reason? There is no documentation available. I want to know how to use this?</p>\r\n<p>Can anyone help. Thanks&nbsp;</p>\r\n",
+    "PostedDate": "2012-04-03T03:24:34.097-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

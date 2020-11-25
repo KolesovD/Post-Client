@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Thank you for MimeParser.\n\nI expected the MimeParser.dll assembly to be signed with a strong name key file so that it can be referenced from a strong name key file signed assembly.\n\nThank you.",
+    "LastUpdatedDate": "2013-03-13T09:12:58.553-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "mimeParser",
+    "ReportedDate": "2013-02-20T19:08:03.99-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Sign MimeParser.dll assembly with a strong name key file",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 16056
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I don't think anything is happening with this project any more. Therefore I recommend you download the source code and use your own strong name key file, build and then reference it - if you haven't already done so.\r\n\r\nHope that helps",
+      "PostedDate": "2013-03-13T09:12:58.553-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

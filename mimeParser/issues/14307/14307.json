@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "In my code when the ParseMessage method executes on the file below and generates a MailMessage object, the To property is not being set correctly.\nInstead the CC property is set and I'm not sure why.  The eml file doesn't contain a CC field.\nAny ideas?\nThanks",
+    "LastUpdatedDate": "2013-02-13T18:30:22.767-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "mimeParser",
+    "ReportedDate": "2011-09-29T07:48:21.983-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Problem when I parse the file below.",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 14307
+  },
+  "FileAttachments": [
+    {
+      "FileId": 4127,
+      "FileName": "b9e42ba501cc7dca00000001.eml",
+      "DownloadUrl": ".\\4127"
+    }
+  ],
+  "Comments": []
+}

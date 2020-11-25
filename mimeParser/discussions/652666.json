@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1467264",
+    "ThreadId": "652666",
+    "Html": "Hi,\r<br />\n<br />\nFirst off all thank you very much for this great work.\r<br />\nAs I am trying to use the MimeParser functionality in SharePoint 2013 in an EMailEventReceiver I didn't just downloaded the whole source but instead just tried to use the ParseMessageRec Methode from the MailMessageMimeParser class (with all its dependent methods).\r<br />\n<br />\nIt works perfect to convert a SPEMailMessage to a System.Net.Mail.MailMessage. But as it seems it doesn`t get the ContentDisposition.Inline attribute of an Attachment (value is always false).\r<br />\nBasically I just need a way to get a grip off all inline elements, embedded in an html mail (which seems impossible from the SPEMailMessage object).<br />\n",
+    "PostedDate": "2016-03-18T04:51:30.99-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

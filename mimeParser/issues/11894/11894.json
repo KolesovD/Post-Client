@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi,\ni think i found two bug when calling\nDecodeHeaders(returnValue.Headers);\n \n1) I have a couple of mails that have pretty long subjects (and other header values too). These span a couple of lines in the raw mail message. For example:\n \nSubject: =?utf-8?B?QXV0b21hdGlzY2hlIEFudHdvcnQ6QW5zY2hyZWliZW4gYW4gSFIgLSDDnGJl?=\n =?utf-8?B?cnByw7xmdW5nIEZ1bmt0aW9uc2Jlc2NocmVpYnVuZyBpbmhhbHRsaWNoIHVu?=\n =?utf-8?Q?d_SOLL-Profil_auf_Inhalte_bezogen?=\n \nbecomes\n \nreturnValue.Headers[\"Subject\"]\t\"=?utf-8?B?QXV0b21hdGlzY2hlIEFudHdvcnQ6QW5zY2hyZWliZW4gYW4gSFIgLSDDnGJl?= =?utf-8?B?cnByw7xmdW5nIEZ1bmt0aW9uc2Jlc2NocmVpYnVuZyBpbmhhbHRsaWNoIHVu?= =?utf-8?Q?d_SOLL-Profil_auf_Inhalte_bezogen?=\"\n \nYou are using these 2 regex to decode the values in DecodeHeaders:\nheaders[key] = Regex.Replace(headers[key].ToString(), @\"=\\?.*?\\?Q\\?(.*?)\\?=\", new MatchEvaluator(MyMatchEvaluator), RegexOptions.IgnoreCase | RegexOptions.Multiline);\nheaders[key] = Regex.Replace(headers[key].ToString(), @\"=\\?.*?\\?B\\?(.*?)\\?=\", new MatchEvaluator(MyMatchEvaluatorBase64), RegexOptions.IgnoreCase | RegexOptions.Multiline);\n           \nAfter this the Subject on the MailMessage only becomes: \"d_SOLL-Profil_auf_Inhalte_bezogen\"\nalthough this should be: \"Anschreiben an Führungskraft - Überprüfung Funktionsbeschreibung inhaltlich und SOLL-Profil auf Inhalte bezogen\"\n \n(MAYBE you just have to switch the two statements. But i don't know exactly!)\n \n2) The MatchEvaluator delegate function: MyMatchEvaluatorBase64 seams to be wrong, too:\nYou are making use of System.Text.Encoding.UTF7 but the actual encoding could be another one (defined in the headers value)\nYou should parse the encoding in the beginning of the regex, too. (=\\?.*?\\?B\\?(.*?)\\?= becomes =\\?(.*?)\\?B\\?(.*?)\\?= attention the Group Index changes. You should make use of named groups.\n \nSystem.Text.Encoding enc = System.Text.Encoding.UTF7;\nshould become:\nSystem.Text.Encoding enc = System.Text.Encoding.GetEncoding(encodingParsedViaRegex);\n \nI hope you can have a look at this soon and fix it.\nThanks, tobi",
+    "LastUpdatedDate": "2013-02-28T15:00:03.063-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "mimeParser",
+    "ReportedDate": "2010-09-08T06:38:21.83-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "DecodeHeaders Bug",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 11894
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Hi toebens,\r\n\r\nThank you for uploading patch #6687! :)",
+      "PostedDate": "2013-02-28T15:00:03.063-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

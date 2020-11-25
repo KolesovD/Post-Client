@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Cheers!\n \nThank you for a wonderful project. We're using it for our non-profit to build our own mailing lists. \n \nI had some problems with my name showing incorrectly (Mikael Lönnroth) in the From field when it was base64 encoded so I tracked it down to this function:\n \nprivate static string MyMatchEvaluatorBase64(Match m)\n \n.. which is responsible for decoding the base64 encoded string in the header. Unfortunately (if I understand it correctly) it only uses UTF-7 for this, so if the headers are encoded in any other way, the special chars will decode incorrectly. I made this small change to illustrate the idea of what it should do, but please comment and correct my code as you need. The names are showing correctly now, though :)\n \n private static string MyMatchEvaluatorBase64(Match m)\n        {\n            String encoding =\n                m.Groups[0].ToString().Substring(2, m.Groups[0].ToString().IndexOf(\"?B\") - 2);\n \n            System.Text.Encoding enc =\n                System.Text.Encoding.GetEncoding(encoding);\n \n            // System.Text.Encoding enc = System.Text.Encoding.UTF7;\n            return enc.GetString(Convert.FromBase64String(m.Groups[1].Value));\n        }",
+    "LastUpdatedDate": "2013-02-13T18:30:24.897-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "mimeParser",
+    "ReportedDate": "2010-02-04T08:50:07.903-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "MIME encoded-word disregards encoding",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 10160
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

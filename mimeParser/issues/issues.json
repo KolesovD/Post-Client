@@ -1,0 +1,78 @@
+[
+  {
+    "Id": 6294,
+    "Title": "Add unit tests"
+  },
+  {
+    "Id": 6295,
+    "Title": "Improve test client"
+  },
+  {
+    "Id": 6296,
+    "Title": "Add comments to source code"
+  },
+  {
+    "Id": 6297,
+    "Title": "Add support for Multipart/digest"
+  },
+  {
+    "Id": 7445,
+    "Title": "To adders not being added"
+  },
+  {
+    "Id": 9213,
+    "Title": "Does not parse body, to, cc"
+  },
+  {
+    "Id": 10160,
+    "Title": "MIME encoded-word disregards encoding"
+  },
+  {
+    "Id": 11862,
+    "Title": "Bug in FindContentType!? obsolete quotes - why not using ContentType ctor!?"
+  },
+  {
+    "Id": 11894,
+    "Title": "DecodeHeaders Bug"
+  },
+  {
+    "Id": 13171,
+    "Title": "Bug in line \"while (!(line = reader.ReadLine()).Equals(\".\"))\""
+  },
+  {
+    "Id": 14305,
+    "Title": "Problem when I parse the file below."
+  },
+  {
+    "Id": 14306,
+    "Title": "Problem when I parse the file below."
+  },
+  {
+    "Id": 14307,
+    "Title": "Problem when I parse the file below."
+  },
+  {
+    "Id": 14308,
+    "Title": "Problem when I parse the file below."
+  },
+  {
+    "Id": 14309,
+    "Title": "Problem when I parse the file below."
+  },
+  {
+    "Id": 14310,
+    "Title": "Problem when I parse the file below."
+  },
+  {
+    "Id": 14311,
+    "Title": "Problem setting To property"
+  },
+  {
+    "Id": 16055,
+    "Title": "opening MimeParser.sln indicates MimeParser.vsmdi requires a conversion from a previous format"
+  },
+  {
+    "Id": 16056,
+    "Title": "Sign MimeParser.dll assembly with a strong name key file"
+  }
+]

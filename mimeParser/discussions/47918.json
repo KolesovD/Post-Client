@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "159834",
+    "ThreadId": "47918",
+    "Html": "Is there a reason you chose not to populate certain message properties while parsing the headers?  It seems that, for example, when you parse the &quot;To&quot; header, it should be added to the &quot;To&quot; property of the MailMessage.  In my testing, while the &quot;To&quot; header is listed among the headers, the &quot;To&quot; property remain at a zero count.<br>\r\n<br>\r\n.Net appears to be getting involved at some level because even though you specify tolower() for all of the headers, it re-caps some of the headers.  (&quot;To&quot;, &quot;From&quot;, etc...)  But it's not automatically adding these values to the appropriate MailMessage properties.  Not sure what that's about.<br>\r\n<br>\r\nAny insight?<br>\r\n<br>\r\nAlso, could you give a quick comment on what each of the RegEx expression are supposed to do.  I think I've got it figured out, but I'd kinda like to check my work.  Thanks.<br>\r\n<br>\r\nJ\r\n",
+    "PostedDate": "2009-02-19T11:26:26.093-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "160395",
+    "ThreadId": "47918",
+    "Html": "I've fixed the missing To header now. Will check in new version shortly. <br>\r\n<br>\r\nAnd yes, .net is magically recasing some of the headers. I have no idea why Microsoft has chosen to do this, and which headers they do it to, but it was another argument why it didn't matter that I lower-cased the headers :-) I guess it happens somewhere in the inner workings of the MailMessage object.<br>\r\n<br>\r\n<br>\r\nI've added some comments to the regex'es, but are there any in particular you wonder about? They are mostly just simple regex extracting the values of the headers, but some of them takes a few strange situations into account, which makes them a bit more unreadable.<br>\r\nSnorre<br>\r\n<br>\r\n",
+    "PostedDate": "2009-02-21T01:17:13.143-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "160472",
+    "ThreadId": "47918",
+    "Html": "<div>Yes... That's a simple fix. I hadn't reviewed the bits where you were making those adjustments before I posted. And there are a few more standard fields that can be translated in the process.<br>\r\n</div>\r\n<div></div>\r\n<div><br>\r\nAs far as the caps.. I just leaned towards keeping them as in the message and adjusting when comparing. I can't really say I have a good reason. But in some cases I output certain headers and just wanted them to match the way they were originally formatted.<br>\r\n</div>\r\n<div></div>\r\n<div><br>\r\nI want to understand all of the regex's... There are a couple with some syntax that I was not familiar with, such as: &quot;=\\?.*?\\?B\\?(.*?)\\?=&quot;<br>\r\n</div>\r\n<div>I can tell it involved breaking the lines up but I can't quite decode it completely, so I was taking the lazy route and asking the author what the intent was. :0)</div>\r\n<div></div>\r\n<div><br>\r\nThanks for your time and effort on this code. I will be sure to keep a credit for you in my project. There are a few parsers out there, but yours seemed the best foundation for tweaking it into what I needed.</div>\r\n<div></div>\r\n<div><br>\r\nJerry</div>\r\n",
+    "PostedDate": "2009-02-21T10:22:35.807-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

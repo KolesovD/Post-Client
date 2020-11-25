@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Thank you for MimeParser.\n\nOpening MimeParser.sln (in Visual Studio 2010) produces the dialog:\n\n[ Convert Files from a Previous Format ]\n-----------------------------------------------\nThe following file or files were created in an earlier version of Visual Studio. These files must be converted to the current format in order for the test project 'MimeParser.MbTest' to load:\nC:\\codeplex\\mimeparser\\MimeParser.vsmdi\n\n[ OK ] [ Cancel ]\n\nI expected that the sln would have all files converted already.\n\nThank you.",
+    "LastUpdatedDate": "2013-02-20T15:49:15.577-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "mimeParser",
+    "ReportedDate": "2013-02-20T15:49:15.577-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "opening MimeParser.sln indicates MimeParser.vsmdi requires a conversion from a previous format",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 16055
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

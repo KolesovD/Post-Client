@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "516353",
+    "ThreadId": "233291",
+    "Html": "\r\n<p><span lang=\"EN-US\" style=\"font-size:12pt\">Hello,</span></p>\r\n<p><span lang=\"EN-US\" style=\"font-size:12pt\">I am new in this area of development.&nbsp;\r\n</span></p>\r\n<p><span lang=\"EN-US\" style=\"font-size:12pt\">I am writing an application to read all Email body on Windows Mobile 6.</span></p>\r\n<p><span lang=\"EN-US\" style=\"font-size:12pt\">So I realize that the most email on windows mobile are in Mime Format.\r\n</span></p>\r\n<p><span lang=\"EN-US\" style=\"font-size:12pt\">I will like to know if with this application it possible to parse WM6 MIME format to get &nbsp;the email Body?\r\n</span></p>\r\n<p><span lang=\"EN-US\" style=\"font-size:12pt\">Thanks you for your Help.</span></p>\r\n",
+    "PostedDate": "2010-11-03T03:29:28.73-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "516427",
+    "ThreadId": "233291",
+    "Html": "Hi feukam<br /><br />That is the exact purpose of this library. I have no idea though if<br />the library would work out of the box on a windows mobile, but maybe<br />you could report back how that is working.<br /><br />Snorre<br /><br /><br />On Wed, Nov 3, 2010 at 11:29 AM, feukam <notifications@codeplex.com> wrote:<br />> From: feukam<br />><br />> Hello,<br />><br />> I am new in this area of development.<br />><br />> I am writing an application to read all Email body on Windows Mobile 6.<br />><br />> So I realize that the most email on windows mobile are in Mime Format.<br />><br />> I will like to know if with this application it possible to parse WM6 MIME<br />> format to get  the email Body?<br />><br />> Thanks you for your Help.<br />><br />> Read the full discussion online.<br />><br />> To add a post to this discussion, reply to this email<br />> ([email removed])<br />><br />> To start a new discussion for this project, email<br />> [email removed]<br />><br />> You are receiving this email because you subscribed to this discussion on<br />> CodePlex. You can unsubscribe or change your settings on codePlex.com.<br />><br />> Please note: Images and attachments will be removed from emails. Any posts<br />> to this discussion will also be available online at codeplex.com",
+    "PostedDate": "2010-11-03T06:10:51.387-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

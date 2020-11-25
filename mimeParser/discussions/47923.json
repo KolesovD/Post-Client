@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "159866",
+    "ThreadId": "47923",
+    "Html": "How can I display the inline images?  I'm using a WPF application with the embeded web browser.  I can successfully show the message by pointing the browser to the content stream, but the images don't display.<br>\r\n<br>\r\nThanks.<br>\r\n<br>\r\nJ\r\n",
+    "PostedDate": "2009-02-19T12:43:47.967-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "160393",
+    "ThreadId": "47923",
+    "Html": "I'm not quite sure if I see exactly what is you issue here. The inline images are stored in the alternate views as linked resources. They are accessible as binary data through the ContentStream member. For instance:<br>\r\n<br>\r\nmyStream = message.AlternateViews[1].LinkedResources[0].ContentStream<br>\r\n<br>\r\nI guess you could use this as a source for a Bitmap in your wpf application.<br>\r\n<br>\r\nSnorre<br>\r\n<br>\r\n",
+    "PostedDate": "2009-02-21T01:11:34.623-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "160466",
+    "ThreadId": "47923",
+    "Html": "<div>Basically I was just trying to figure out a way to get it all displayed properly in a browser. But it seems there is no &quot;easy&quot; way. I had to save out the linked resources to a temp folder and then edit the html view to update the image src references. I guess my question should have been &quot;Is there an easy way to translate the view and resources into a proper html document?&quot;<br>\r\n</div>\r\n<div></div>\r\n<div><br>\r\nAnyway, I've got that bit covered, really. Just had to resort to the temp files. </div>\r\n<div></div>\r\n<div><br>\r\nBut there is a parsing issue: </div>\r\n<div></div>\r\n<div><br>\r\nA bit of background... In my project, all of the messages are Exchange journal messages that wrap the original message as an attachment. So for each one, I parse the journal message and look for the attachment, which will always be another message. I pull that content and pass it back to the parser:<br>\r\n</div>\r\n<div></div>\r\n<div><br>\r\n<hr>\r\nStreamReader r = new StreamReader(&quot;C:\\\\journal\\\\worddoc.eml&quot;);</div>\r\n<div>StringReader reader = new StringReader(r.ReadToEnd());</div>\r\n<div>MailMessage message = MailMessageMimeParser.ParseMessage(reader);</div>\r\n<div></div>\r\n<div><br>\r\nStreamReader r2 = new StreamReader(message.Attachments[0].ContentStream);</div>\r\n<div>StringReader reader2 = new StringReader(r2.ReadToEnd());</div>\r\n<div>MailMessage m2 = MailMessageMimeParser.ParseMessage(reader2);</div>\r\n<div></div>\r\n<div><hr>\r\n<br>\r\nThe simpler ones, such as the bcc.eml file I sent in a previous post, parse without issue. But more complex emails are not getting parsed properly. Inline attachments such as the images for the html view are getting added as normal attachments. (As if the FixStandardFileds logic needs to be applied at additional times during the parse.)<br>\r\n</div>\r\n<div></div>\r\n<div><br>\r\nI've attached a sample message that has this issue.</div>\r\n<div></div>\r\n<div><br>\r\nI'll be looking into this to, but perhaps you'll pick it out faster, as you're somewhat more familiar with the code... </div>\r\n<div></div>\r\n<div><br>\r\nJerry</div>\r\n",
+    "PostedDate": "2009-02-21T10:10:26.117-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,21 @@
+Received: from swr10525.europe.buzz.biz ([10.148.192.20]) by SWR10510.europe.biff.biz with Microsoft SMTPSVC(6.0.3790.1830);
+	 Fri, 8 Aug 2008 10:52:47 +0300
+Received: from SWR10806 ([10.152.14.48]) by swr10525.europe.biff.biz with Microsoft SMTPSVC(6.0.3790.1830);
+	 Fri, 8 Aug 2008 10:52:46 +0300
+MIME-Version: 1.0
+From: PolyMon <biff.baff@buff.no>
+To: "Maintenace" <receiver@biff.no>
+Date: 8 Aug 2008 09:52:47 +0200
+Subject: swr123 - Documents Production - Fail
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+Return-Path: bing.bang@bong.no
+Message-ID: <SWR10525mApR0Hy9Ngv00001ccd@swr10525.europe.company.biz>
+X-OriginalArrivalTime: 08 Aug 2008 07:52:46.0731 (UTC) FILETIME=[BF3B65B0:01C8F92B]
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=0Aswr10843=
+ - Documents Production=0AService Monitor=0A=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=0AStatus: Fail=0ADate: Aug  8 2008 09:52:43=0A=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=0AThe remote procedure call failed=0A=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=0A
+

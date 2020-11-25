@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "808588",
+    "ThreadId": "348133",
+    "Html": "\r\n<p>Hey all,</p>\r\n<p>Do you think this could be adapted into a sharepoint feature, maybe entering the C# directly into a workflow to parse information in an email sent to a sharepoint list to pre defined columns in that list?</p>\r\n<p>Im not really a developer but if anybody could point me in the direction to start this i will give it a go.</p>\r\n",
+    "PostedDate": "2012-03-10T13:17:11.357-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "810945",
+    "ThreadId": "348133",
+    "Html": "<p>I don't see why not.&nbsp; You may have to create a custom workflow activity, but there's no reason why this logic couldn't be included in a web part.</p>\r\n<p>J</p>",
+    "PostedDate": "2012-03-15T09:32:35.79-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "hi,\ni think i found a bug in the method FindContentType.\n \nyou are parsing the content-type header via regex - the charset as well:\n...\n            if (Regex.IsMatch(headers[\"content-type\"], @\"charset=\"\"(.*?)\"\"\", RegexOptions.IgnoreCase))\n                returnValue.CharSet = Regex.Match(headers[\"content-type\"], @\"charset=\"\"(.*?)\"\"\", RegexOptions.IgnoreCase).Groups[1].Value;\n...\n \nthe quotes behind the equal sign should be all obsolete (at least in charset).\n \nBUT why dont you just pass the whole header value to the constructor (this is working like a charm) like:\nreturnValue = new ContentType(headers[\"content-type\"]);\n \nthanks, toebens",
+    "LastUpdatedDate": "2013-02-28T14:59:56.45-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "mimeParser",
+    "ReportedDate": "2010-09-02T04:49:57.137-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Bug in FindContentType!? obsolete quotes - why not using ContentType ctor!?",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 11862
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Hi toebens,\r\n\r\nThank you for uploading patch #6687! :)",
+      "PostedDate": "2013-02-28T14:59:56.45-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

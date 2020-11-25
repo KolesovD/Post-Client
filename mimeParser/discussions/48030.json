@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "160235",
+    "ThreadId": "48030",
+    "Html": "There are cases where the existence of a header is an idicator in itself, even if it has no value.  You are not adding these headers to the header collection of the message.  Was that intended?<br>\r\n<br>\r\nOne example is for Microsoft Exchange journaled messages.  Once journaled, they contain a header called &quot;X-MS-Journal-Report&quot;.  It has no value.  It exists as a flag to indicate that this message was created as an Exchange journal message.<br>\r\n<br>\r\nJust wanted to throw that out ot you.  I've adjusted the code on my end, as I need to see that header.<br>\r\n<br>\r\nAlso, why are you forcing all headers ToLower() ?<br>\r\n<br>\r\nJ \r\n",
+    "PostedDate": "2009-02-20T10:31:12.893-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "160391",
+    "ThreadId": "48030",
+    "Html": "Can you email me an example of a valid message with the journal report header? I'll fix this.<br>\r\n<br>\r\nThe headers are lower cased to simplify the string comparison and hash table lookup. I could of course make a case insensitive hash table and have the string comparisons case insensitive, but that didn't seem to be worth it because making them lower case doesn't change the content of the email. I had a case where the same header were repeated with different casing, and that made it appear twice in the hash table.<br>\r\n<br>\r\n<br>\r\n",
+    "PostedDate": "2009-02-21T01:00:14.59-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "160462",
+    "ThreadId": "48030",
+    "Html": "<div>There are times when a header can appear more than once. The Received header, comes to mind. You'll get one of those for each server the message passes through. An example of that is attached, as well.</div>\r\n<div></div>\r\n<div><br>\r\nAttached:</div>\r\n<div><br>\r\n</div>\r\n<ul>\r\n    <li>bcc.eml - A simple Exchange journal message. Has the Empty X-MS-Journal-Message flag as a header. (I made a simple change in the code to just add a space as a value for a header with no value.) </li>\r\n    <li>External.eml - Sample of a message with multiple received headers. </li>\r\n</ul>\r\n<p>(I guess the attachments don't stick when replying...  How can I get them to you?)<br>\r\n<br>\r\nJerry</p>\r\n",
+    "PostedDate": "2009-02-21T09:54:46.033-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "173013",
+    "ThreadId": "48030",
+    "Html": "Hi, I finally got around to testing this, and as far as I can see the<br>multiple Received headers are handled correctly. the MailMessage class<br>concatenates the values of several similar headers and on .send() it<br>separates them into several lines. See attached file for raw output.<br><br>With kind regards<br><br>Snorre<br><br>On Sat, Feb 21, 2009 at 6:54 PM, [email removed] wrote:<br>&gt; From: rlrcstr<br>&gt;<br>&gt; There are times when a header can appear more than once. The Received<br>&gt; header, comes to mind. You'll get one of those for each server the message<br>&gt; passes through. An example of that is attached, as well.<br>&gt; Attached:<br>&gt; bcc.eml - A simple Exchange journal message. Has the Empty<br>&gt; X-MS-Journal-Message flag as a header. (I made a simple change in the code<br>&gt; to just add a space as a value for a header with no value.)<br>&gt; External.eml - Sample of a message with multiple received headers.<br>&gt; From: snarum<br>&gt; Sent: Saturday, February 21, 2009 4:00 AM<br>&gt; To: [email removed]<br>&gt; Subject: Re: Empty Headers [mimeParser:48030]<br>&gt;<br>&gt; From: snarum<br>&gt;<br>&gt; Can you email me an example of a valid message with the journal report<br>&gt; header? I'll fix this.<br>&gt;<br>&gt; The headers are lower cased to simplify the string comparison and hash table<br>&gt; lookup. I could of course make a case insensitive hash table and have the<br>&gt; string comparisons case insensitive, but that didn't seem to be worth it<br>&gt; because making them lower case doesn't change the content of the email. I<br>&gt; had a case where the same header were repeated with different casing, and<br>&gt; that made it appear twice in the hash table.<br>&gt;<br>&gt;<br>&gt; Read the full discussion online.<br>&gt;<br>&gt; To add a post to this discussion, reply to this email<br>&gt; ([email removed])<br>&gt;<br>&gt; To start a new discussion for this project, email<br>&gt; [email removed]<br>&gt;<br>&gt; You are receiving this email because you subscribed to this discussion on<br>&gt; CodePlex. You can unsubscribe or change your settings on codePlex.com.<br>&gt;<br>&gt; Please note: Images and attachments will be removed from emails. Any posts<br>&gt; to this discussion will also be available online at codeplex.com",
+    "PostedDate": "2009-03-27T22:47:28.89-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]
